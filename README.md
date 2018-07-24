@@ -1,3 +1,15 @@
+#Hi There!
+
+This project is fun. It is a work in progess.
+This is for CA for a code challenge. Time permitting, I've done what I could.
+I'm a UI guy. I focus on Semantic HTML, CSS/SCSS, and Accessibility constantly.
+Please reach out with questions or feedback. 
+
+Thanks for your time.
+
+- will
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
