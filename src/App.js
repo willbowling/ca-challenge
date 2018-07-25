@@ -1,18 +1,8 @@
-import React, { Component } from 'react';
-import Moment from 'moment';
-import { extendMoment } from 'moment-range';
+import React, {
+  Component
+} from 'react';
+import Moment from 'react-moment';
 import './App.css';
-
-
-const moment = extendMoment(Moment);
-
-const start = new Date(2012, 0, 15);
-const end = new Date(2012, 4, 23);
-const range = moment.range(start, end);
-
-
-// import Moment from 'react-moment';
-// import 'moment-timezone';
 
 // 1.  Using your preferred Javascript framework, build a screen which shows a list of hour long slots from 9am to 5pm.
 // 2.  When one time slot is clicked, pop up a modal which asks for name and phone number.
@@ -22,40 +12,48 @@ const range = moment.range(start, end);
 class Challenge extends Component {
 
   render() {
-    
-    // const time = new Date().getHours();
-    
+
+    const time = new Date().getHours();
+
     // const dateToFormat;
 
-    moment('2016-03-12 13:00:00').add(24, 'hours').format('LLL')
+    // Moment('2016-03-12 13:00:00').add(24, 'hours').format('LLL')
 
     return (
-      console.log('date', moment),
-      
-      <section className="Challenge">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to Cox Automotive Code Challenge</h1>
-        </header>
-        <p> Please select desired appointment time </p>
-        {/* Apologies for the below... I intended to use moment to populate dateTime and create other options */}
-          <select name ="time">
-            <option value = "9:00am">9:00am</option>
-            <option value = "10:00am">10:00am</option>
-            <option value = "11:00am">11:00am</option>
-            <option value = "12:00pm">12:00pm</option>
-            <option value = "1:00pm">1:00pm</option>
-            <option value = "2:00pm">2:00pm</option>
-            <option value = "3:00pm">3:00pm</option>
-            <option value = "4:00pm">4:00pm</option>
-            <option value = "5:00pm">5:00pm</option>
-          </select>
+      console.log('date', Moment),
 
-          <button label="Confirm Time"> Confirm Time </button>
-          
-          
+      <
+      section className = "Challenge" >
+      <
+      header className = "App-header" >
+      <
+      h1 className = "App-title" > Welcome to Cox Automotive Code Challenge < /h1> <
+      /header> <
+      p > Please select desired appointment time < /p> <
+      select name = "time" >
+      <
+      option value = "9:00am" > 9: 00 am < /option> <
+      option value = "10:00am" > 10: 00 am < /option> <
+      option value = "11:00am" > 11: 00 am < /option> <
+      option value = "12:00pm" > 12: 00 pm < /option> <
+      option value = "1:00pm" > 1: 00 pm < /option> <
+      option value = "2:00pm" > 2: 00 pm < /option> <
+      option value = "3:00pm" > 3: 00 pm < /option> <
+      option value = "4:00pm" > 4: 00 pm < /option> <
+      option value = "5:00pm" > 5: 00 pm < /option> <
+      /select>
 
-            {/* <Moment time={time} /> */}
-      </section>
+      <
+      button label = "Confirm Time" > Confirm Time < /button>
+
+
+
+      <
+      Moment time = {
+        time
+      }
+      /> <
+      /section>
     );
   }
 }
