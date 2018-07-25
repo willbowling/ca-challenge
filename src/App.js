@@ -11,37 +11,33 @@ class Challenge extends Component {
 
   render() {
 
-    const time = new Date().getHours();
-
-    // const dateToFormat;
-
-    // Moment('2016-03-12 13:00:00').add(24, 'hours').format('LLL')
+    // const time = new Date().getHours();
+    const timeToFormat = () => Moment().format("hh:mm");
 
     return (
-      console.log('date', Moment),
-
       <section className="Challenge">
         <header className="App-header">
           <h1 className="App-title">Welcome to Cox Automotive Code Challenge</h1>
         </header>
-        <p> Please select desired appointment time </p>
-        <select name="time">
-          <option value="9:00am">9:00am</option>
-          <option value="10:00am">10:00am</option>
-          <option value="11:00am">11:00am</option>
-          <option value="12:00pm">12:00pm</option>
-          <option value="1:00pm">1:00pm</option>
-          <option value="2:00pm">2:00pm</option>
-          <option value="3:00pm">3:00pm</option>
-          <option value="4:00pm">4:00pm</option>
-          <option value="5:00pm">5:00pm</option>
-        </select>
-
-        <button label="Confirm Time"> Confirm Time </button>
-
-
-
-        <Moment time={time} />
+        <form>
+          <label htmlFor="time">
+            Please select desired appointment time
+          </label>
+          <hr />
+          <select name="time" aria-label="time">
+            <option value="9:00am">9:00am</option>
+            <option value="10:00am">10:00am</option>
+            <option value="11:00am">11:00am</option>
+            <option value="12:00pm">12:00pm</option>
+            <option value="1:00pm">1:00pm</option>
+            <option value="2:00pm">2:00pm</option>
+            <option value="3:00pm">3:00pm</option>
+            <option value="4:00pm">4:00pm</option>
+            <option value="5:00pm">5:00pm</option>
+          </select>
+          <button label="Confirm Time"> Confirm Time </button>
+        </form>
+        <Moment time={timeToFormat} />
       </section>
     );
   }
