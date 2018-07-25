@@ -1,6 +1,4 @@
-import React, {
-  Component
-} from 'react';
+import React, { Component } from 'react';
 import Moment from 'react-moment';
 import './App.css';
 
@@ -22,38 +20,29 @@ class Challenge extends Component {
     return (
       console.log('date', Moment),
 
-      <
-      section className = "Challenge" >
-      <
-      header className = "App-header" >
-      <
-      h1 className = "App-title" > Welcome to Cox Automotive Code Challenge < /h1> <
-      /header> <
-      p > Please select desired appointment time < /p> <
-      select name = "time" >
-      <
-      option value = "9:00am" > 9: 00 am < /option> <
-      option value = "10:00am" > 10: 00 am < /option> <
-      option value = "11:00am" > 11: 00 am < /option> <
-      option value = "12:00pm" > 12: 00 pm < /option> <
-      option value = "1:00pm" > 1: 00 pm < /option> <
-      option value = "2:00pm" > 2: 00 pm < /option> <
-      option value = "3:00pm" > 3: 00 pm < /option> <
-      option value = "4:00pm" > 4: 00 pm < /option> <
-      option value = "5:00pm" > 5: 00 pm < /option> <
-      /select>
+      <section className="Challenge">
+        <header className="App-header">
+          <h1 className="App-title">Welcome to Cox Automotive Code Challenge</h1>
+        </header>
+        <p> Please select desired appointment time </p>
+        <select name="time">
+          <option value="9:00am">9:00am</option>
+          <option value="10:00am">10:00am</option>
+          <option value="11:00am">11:00am</option>
+          <option value="12:00pm">12:00pm</option>
+          <option value="1:00pm">1:00pm</option>
+          <option value="2:00pm">2:00pm</option>
+          <option value="3:00pm">3:00pm</option>
+          <option value="4:00pm">4:00pm</option>
+          <option value="5:00pm">5:00pm</option>
+        </select>
 
-      <
-      button label = "Confirm Time" > Confirm Time < /button>
+        <button label="Confirm Time"> Confirm Time </button>
 
 
 
-      <
-      Moment time = {
-        time
-      }
-      /> <
-      /section>
+        <Moment time={time} />
+      </section>
     );
   }
 }
